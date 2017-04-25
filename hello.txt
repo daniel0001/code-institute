@@ -1,2 +1,52 @@
 Hello World!
 First change woohoo
+
+Process:
+
+danie@DANIEL-HP MINGW32 ~
+$ cd test			// this chnages to folder that is already a local git repository
+
+danie@DANIEL-HP MINGW32 ~/test (master)
+$ git remote add origin https://github.com/daniel0001/code-institute.git   //link to the github repository
+
+danie@DANIEL-HP MINGW32 ~/test (master)
+$ git push -u origin master			// push the file to github
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 232 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/daniel0001/code-institute.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+
+
+danie@DANIEL-HP MINGW32 ~/test (master)
+$ git status					// check the state of the file after it has been changed
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+danie@DANIEL-HP MINGW32 ~/test (master)
+$ git add hello.txt				// stage the file ready for push
+
+danie@DANIEL-HP MINGW32 ~/test (master)
+$ git commit -m "second commit"
+[master fa0a96a] second commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+danie@DANIEL-HP MINGW32 ~/test (master)
+$ git push -u origin master			// push up to github (already linked so no need to add the github repository again)
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 280 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/daniel0001/code-institute.git
+   158a800..fa0a96a  master -> master
+Branch master set up to track remote branch master from origin.
+
+danie@DANIEL-HP MINGW32 ~/test (master)
